@@ -1,0 +1,109 @@
+/* Basic styles for body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* Search box */
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #5c67f2;
+}
+
+/* To-do input */
+.enter-todo {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.textInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.textInput:focus {
+    border-color: #5c67f2;
+}
+
+/* Add button */
+.addTodoButton {
+    padding: 10px 20px;
+    background-color: #5c67f2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addTodoButton:hover {
+    background-color: #434fb5;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    padding: 2%;
+    margin: 1%;
+    background-color: whitesmoke;
+}
+li:hover{
+    background-color: rgb(114, 114, 114);
+}
+li.completed{
+    text-decoration: line-through;
+    color: grey;
+}
+
+/* Clear button */
+.clear-button {
+    padding: 5px 10px;
+    background-color: #ff4f4f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+    background-color: #d63d3d;
+}
+
+/* Total items */
+.totalItems {
+    text-align: right;
+    font-size: 14px;
+    color: #777;
+}
